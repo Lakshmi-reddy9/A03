@@ -1,7 +1,15 @@
-QUnit.test('factorial()', function (assert) {
+QUnit.test("Here's a test that should always pass", function (assert) {
+    assert.ok(1 <= "3", "1<3 - the first agrument is 'truthy', so we pass!");
+});
 
-    assert.equal(GuessNum(0), "You have selected Factorial function. The result for given number 0 is: 1", 'Tested with 0 and gives 1 ');
-    assert.equal(factorial(4), "You have selected Factorial function. The result for given number 4 is: 24", 'Tested with NUmber');
-    assert.equal()
-}
-);
+QUnit.test('Testing Higher', function (assert) {
+    assert.equal(process(6,3), "Lower!");    
+});
+
+QUnit.test('Testing Lower', function (assert) {
+    assert.equal(process(6,12), "Higher!");    
+});
+
+QUnit.test('Testing Equal', function (assert) {
+    assert.equal(process(6,6), "Correct!");    
+});
